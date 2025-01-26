@@ -35,7 +35,7 @@ header{
     
 }
 
-/* delete later*/
+/* delete later
 
 .nav-btton a{
     padding: 10px;
@@ -47,6 +47,30 @@ header{
 
 .nav-btton .test2{
     background-color: brown;
+}
+    */
+
+.aud-btton{
+    background: transparent;
+    border: 25px;
+    padding: 25px;
+    border-radius: 25%;
+    cursor: pointer;
+    margin: 0%;
+    transition: all .6s cubic-bezier(0.165, 0.84, 0.44, 1)
+}
+
+.aud-btton img{
+    height: 30px;
+    width: 30px;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.aud-btton:hover{
+    background-color: transparent;
+    box-shadow: 0 5px 15px rgb(100, 118, 138);
 }
 
 /* delete later*/
