@@ -1,7 +1,6 @@
-const audioButton = document.querySelector('nav-btton');
-const audio = document.querySelector('firetreasure');
+const audioButton = document.querySelector('.aud-btton');
+const audio = document.querySelector('#firetreasure');
 
-function play(){
-    var audio = document.getElementById("audio");
-    audio.play()
-}
+audioButton.addEventListener('click', function(){
+    audio.play();
+})
