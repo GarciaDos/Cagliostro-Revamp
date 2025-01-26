@@ -17,6 +17,11 @@ function resumeOverlay(){
 function pauseOverlay(){
 playButton.classList.toggle('paused');
 }
+
+window .addEventListener('load', function() {
+    playButton.classList.add('paused');
+});
+
 const playButton = document.querySelector('.aud-btton');
 const pauseButton = document.querySelector('.aud-btton');
 const audio = document.querySelector('#firetreasure');
