@@ -115,31 +115,38 @@ header{
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-
+    pointer-events: none;
 }
 
 .intro-cag h1, h3{
     font-size: 50px;
     font-family:'Courier New', Courier, monospace;
+    
 }
 
 .intro-cag h1{
     margin-bottom: 0px;
     font-weight: 999;
+    letter-spacing: 9px;
+    font-size: 90px;
+
 }
 
 .intro-cag h3{
-    font-size: 25px;
+    font-size: 45px;
     font-weight: 750;
 }
 
 .intro-cag p{
+    font-size: 25px;
     font-weight: 400;
     font-family:'Courier New', Courier, monospace;
+    
 }
 
 .intro-cag h1,h3, p{
     color: azure;
     text-align: center;
+    
 
 }

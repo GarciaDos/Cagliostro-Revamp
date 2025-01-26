@@ -21,7 +21,7 @@ playButton.classList.toggle('paused');
 window .addEventListener('load', function() {
     playButton.classList.add('paused');
 });
-
+const parallaxMouse = document.querySelector('.intro-cag');
 const playButton = document.querySelector('.aud-btton');
 const pauseButton = document.querySelector('.aud-btton');
 const audio = document.querySelector('#firetreasure');
@@ -38,6 +38,20 @@ playButton.addEventListener('click', function(){
     pauseOverlay();
 }
 });
+
+document.addEventListener("mousemove", parallax);
+function parallax(e) {
+    document.querySelectorAll('.intro-cag').forEach(function(move){
+
+        var moving_value = move.getAttribute("data-value");
+        var x = e.clientX * moving_value /150;
+        var y = e.clientY * moving_value /150;
+
+        move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
+    });
+}
+
+
 
 
 
