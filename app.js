@@ -6,20 +6,17 @@ function pauseAudio(){
     audio.pause();
 }
 
-/* delete later */
-
-function testfunc(){
-    alert('you clicked this');
+/*function pauseOverlay(){
+    document.querySelector('.aud-btton').style["backgroundColor"] = "rgb(46, 52, 97)";
 }
 
-function iconChange(){
-    document.getElementsByClassName
+function resumeOverlay(){
+    document.querySelector('.aud-btton').style["backgroundColor"] = "transparent";
 }
-
-/* delete later */
-
-const iconChangeOff = document.querySelector('#volumeIconOff');
-const iconChangeOn = document.querySelector('#volumeIconOn')
+*/
+function pauseOverlay(){
+playButton.classList.toggle('paused');
+}
 const playButton = document.querySelector('.aud-btton');
 const pauseButton = document.querySelector('.aud-btton');
 const audio = document.querySelector('#firetreasure');
@@ -27,21 +24,16 @@ const audio = document.querySelector('#firetreasure');
 playButton.addEventListener('click', function(){
     if (audio.paused){
         playAudio();
+        pauseOverlay();
     }
 
     else{
 
     pauseAudio();
+    pauseOverlay();
 }
 });
 
 
-/* delete later 
 
 
-document.querySelector(".test1").addEventListener('click', function()){
-    testfunc();
-}
-
-
-/* delete later */
