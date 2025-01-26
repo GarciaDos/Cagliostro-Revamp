@@ -26,6 +26,8 @@ const playButton = document.querySelector('.aud-btton');
 const pauseButton = document.querySelector('.aud-btton');
 const audio = document.querySelector('#firetreasure');
 
+audio.loop = true;
+
 playButton.addEventListener('click', function(){
     if (audio.paused){
         playAudio();
@@ -41,7 +43,7 @@ playButton.addEventListener('click', function(){
 
 document.addEventListener("mousemove", parallax);
 function parallax(e) {
-    document.querySelectorAll('.intro-cag').forEach(function(move){
+    document.querySelectorAll('.intro-cag, .bgtwo').forEach(function(move){
 
         var moving_value = move.getAttribute("data-value");
         var x = e.clientX * moving_value /150;
@@ -50,7 +52,6 @@ function parallax(e) {
         move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
     });
 }
-
 
 
 
