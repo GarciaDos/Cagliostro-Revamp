@@ -35,6 +35,21 @@ header{
     
 }
 
+/* delete later*/
+
+.nav-btton a{
+    padding: 10px;
+}
+
+.nav-btton .test1{
+    background-color: aliceblue;
+}
+
+.nav-btton .test2{
+    background-color: brown;
+}
+
+/* delete later*/
 .nav-btton button{
     display: inline-block;
     padding: 8px 24px;
