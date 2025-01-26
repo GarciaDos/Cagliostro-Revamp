@@ -1,0 +1,100 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    
+}
+
+.container{
+    font-family:Arial, Helvetica, sans-serif ;
+    display: flex;
+    color:white;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+
+header{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 999;
+}
+
+
+.nav-btton{
+    padding: 8px;
+    
+    
+}
+
+.nav-btton button{
+    display: inline-block;
+    padding: 8px 24px;
+}
+
+.image-section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+}
+
+.image-src{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.image-src img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.intro-cag{
+    z-index: 1;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+}
+
+.intro-cag h1, h3{
+    font-size: 50px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.intro-cag h1{
+    margin-bottom: 0px;
+    font-weight: 999;
+}
+
+.intro-cag h3{
+    font-size: 25px;
+    font-weight: 750;
+}
+
+.intro-cag p{
+    font-weight: 400;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.intro-cag h1,h3, p{
+    color: azure;
+    text-align: center;
+
+}
