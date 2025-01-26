@@ -122,14 +122,36 @@ header{
     font-size: 16px;
     transform: translate(-50%);
     opacity: 0.7;
+    margin:0%
 
 }
 
 .intro-scroll img{
     height: 15px;
     width: 15px;
-    transform: translate(-50%);
+   /* transform: translate(-50%);*/
     opacity: 0.7;
+    
+}
+
+.scrolldown {
+    animation-name: updown;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    transition: all .3s;
+}
+
+@keyframes updown {
+    0% {
+        transform: translateX(-50%)translateY(0px);
+    }
+    50% {
+        transform: translateX(-50%)translateY(10px);
+    }
+    100% {
+        transform: translateX(-50%)translateY(0px);
+    }
 }
 
 .intro-cag{
